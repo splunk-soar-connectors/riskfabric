@@ -13,31 +13,25 @@
     "utctime_updated": "2018-01-03T18:01:38.795669Z",
     "package_name": "phantom_riskfabric",
     "main_module": "riskfabric_connector.pyc",
-    "min_phantom_version": "3.5.180",
+    "min_phantom_version": "3.5.210",
     "app_wizard_version": "1.0.0",
     "configuration": {
         "baseurl": {
             "description": "URL of the Risk Fabric instance",
             "data_type": "string",
             "required": true,
-            "value_list": [],
-            "default": "",
             "order": 0
         },
         "username": {
             "description": "Username of the API user",
             "data_type": "string",
             "required": true,
-            "value_list": [],
-            "default": "",
             "order": 1
         },
         "password": {
             "description": "Password of the API user",
             "data_type": "password",
             "required": true,
-            "value_list": [],
-            "default": "",
             "order": 2
         }
     },
@@ -69,8 +63,6 @@
                     "contains": [
                         "user name"
                     ],
-                    "value_list": [],
-                    "default": "",
                     "order": 0
                 }
             },
@@ -147,8 +139,6 @@
                         "ip",
                         "ipv6"
                     ],
-                    "value_list": [],
-                    "default": "",
                     "order": 0
                 }
             },
@@ -225,8 +215,6 @@
                     "contains": [
                         "host name"
                     ],
-                    "value_list": [],
-                    "default": "",
                     "order": 0
                 }
             },
