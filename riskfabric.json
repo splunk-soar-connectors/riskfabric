@@ -61,7 +61,7 @@
             "type": "investigate",
             "read_only": true,
             "parameters": {
-                "queryvalue": {
+                "Username": {
                     "description": "Username",
                     "data_type": "string",
                     "required": true,
@@ -138,7 +138,7 @@
             "type": "investigate",
             "read_only": true,
             "parameters": {
-                "queryvalue": {
+                "ip_address": {
                     "description": "IP address",
                     "data_type": "string",
                     "required": true,
@@ -217,8 +217,8 @@
             "type": "investigate",
             "read_only": true,
             "parameters": {
-                "queryvalue": {
-                    "description": "Host",
+                "hostname": {
+                    "description": "Hostname",
                     "data_type": "string",
                     "required": true,
                     "primary": true,

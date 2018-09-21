@@ -164,7 +164,7 @@ class RiskFabricConnector(BaseConnector):
 
         # Access action parameters passed in the 'param' dictionary
         # Required values can be accessed directly
-        queryvalue = param['queryvalue']
+        queryvalue = param['username']
 
         # Optional values should use the .get() function
         # optional_parameter = param.get('', 'default_value')
@@ -194,7 +194,7 @@ class RiskFabricConnector(BaseConnector):
 
         # Access action parameters passed in the 'param' dictionary
         # Required values can be accessed directly
-        queryvalue = param['queryvalue']
+        queryvalue = param['ip_address']
 
         # Optional values should use the .get() function
         # optional_parameter = param.get('', 'default_value')
@@ -224,7 +224,7 @@ class RiskFabricConnector(BaseConnector):
 
         # Access action parameters passed in the 'param' dictionary
         # Required values can be accessed directly
-        queryvalue = param['queryvalue']
+        queryvalue = param['hostname']
 
         # Optional values should use the .get() function
         # optional_parameter = param.get('', 'default_value')
