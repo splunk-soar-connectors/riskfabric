@@ -1,7 +1,7 @@
 {
     "appid": "e32a56e4-ac0c-46e4-a24d-925f48984ff4",
     "name": "Risk Fabric",
-    "description": "This app supports retrieving entity risk scores from Risk Fabric.",
+    "description": "This app supports retrieving entity risk scores from Risk Fabric",
     "type": "endpoint",
     "product_vendor": "Bay Dynamics",
     "logo": "riskfabric.png",
@@ -13,7 +13,7 @@
     "utctime_updated": "2018-01-03T18:01:38.795669Z",
     "package_name": "phantom_riskfabric",
     "main_module": "riskfabric_connector.pyc",
-    "min_phantom_version": "3.0.251",
+    "min_phantom_version": "3.5.180",
     "app_wizard_version": "1.0.0",
     "configuration": {
         "baseurl": {
