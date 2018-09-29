@@ -9,8 +9,8 @@
     "product_version_regex": ".*",
     "publisher": "Bay Dynamics",
     "license": "Copyright Bay Dynamics 2018",
-    "app_version": "1.2.0",
-    "utctime_updated": "2018-01-03T18:01:38.795669Z",
+    "app_version": "1.2.1",
+    "utctime_updated": "2018-09-29T00:39:31.000000Z",
     "package_name": "phantom_riskfabric",
     "main_module": "riskfabric_connector.pyc",
     "min_phantom_version": "3.5.210",
@@ -66,57 +66,57 @@
                     "order": 0
                 }
             },
-          "output": [
-            {
-              "data_path": "action_result.parameter.username",
-              "data_type": "string",
-              "contains": [
-                "user name"
-              ]
-            },
-            {
-              "data_path": "action_result.data.*.entity_name",
-              "data_type": "string",
-              "column_name": "entity name",
-              "column_order": 0
-            },
-            {
-              "data_path": "action_result.data.*.entity_type",
-              "data_type": "string",
-              "column_name": "entity type",
-              "column_order": 1
-            },
-            {
-              "data_path": "action_result.data.*.risk_rating",
-              "data_type": "numeric",
-              "column_name": "risk rating",
-              "column_order": 2
-            },
-            {
-              "data_path": "action_result.data.*.risk_score",
-              "data_type": "numeric",
-              "column_name": "risk score",
-              "column_order": 3
-            },
-            {
-              "data_path": "action_result.status",
-              "data_type": "string",
-              "column_name": "status",
-              "column_order": 4
-            },
-            {
-              "data_path": "action_result.message",
-              "data_type": "string"
-            },
-            {
-              "data_path": "summary.total_objects",
-              "data_type": "numeric"
-            },
-            {
-              "data_path": "summary.total_objects_successful",
-              "data_type": "numeric"
-            }
-          ],
+            "output": [
+                {
+                    "data_path": "action_result.parameter.username",
+                    "data_type": "string",
+                    "contains": [
+                        "user name"
+                    ]
+                },
+                {
+                    "data_path": "action_result.data.*.entity_name",
+                    "data_type": "string",
+                    "column_name": "entity name",
+                    "column_order": 0
+                },
+                {
+                    "data_path": "action_result.data.*.entity_type",
+                    "data_type": "string",
+                    "column_name": "entity type",
+                    "column_order": 1
+                },
+                {
+                    "data_path": "action_result.data.*.risk_rating",
+                    "data_type": "numeric",
+                    "column_name": "risk rating",
+                    "column_order": 2
+                },
+                {
+                    "data_path": "action_result.data.*.risk_score",
+                    "data_type": "numeric",
+                    "column_name": "risk score",
+                    "column_order": 3
+                },
+                {
+                    "data_path": "action_result.status",
+                    "data_type": "string",
+                    "column_name": "status",
+                    "column_order": 4
+                },
+                {
+                    "data_path": "action_result.message",
+                    "data_type": "string"
+                },
+                {
+                    "data_path": "summary.total_objects",
+                    "data_type": "numeric"
+                },
+                {
+                    "data_path": "summary.total_objects_successful",
+                    "data_type": "numeric"
+                }
+            ],
             "render": {
                 "type": "table"
             },
@@ -142,58 +142,58 @@
                     "order": 0
                 }
             },
-          "output": [
-            {
-              "data_path": "action_result.parameter.ip_address",
-              "data_type": "string",
-              "contains": [
-                "ip",
-                "ipv6"
-              ]
-            },
-            {
-              "data_path": "action_result.data.*.entity_name",
-              "data_type": "string",
-              "column_name": "entity name",
-              "column_order": 0
-            },
-            {
-              "data_path": "action_result.data.*.entity_type",
-              "data_type": "string",
-              "column_name": "entity type",
-              "column_order": 1
-            },
-            {
-              "data_path": "action_result.data.*.risk_rating",
-              "data_type": "numeric",
-              "column_name": "risk rating",
-              "column_order": 2
-            },
-            {
-              "data_path": "action_result.data.*.risk_score",
-              "data_type": "numeric",
-              "column_name": "risk score",
-              "column_order": 3
-            },
-            {
-              "data_path": "action_result.status",
-              "data_type": "string",
-              "column_name": "status",
-              "column_order": 4
-            },
-            {
-              "data_path": "action_result.message",
-              "data_type": "string"
-            },
-            {
-              "data_path": "summary.total_objects",
-              "data_type": "numeric"
-            },
-            {
-              "data_path": "summary.total_objects_successful",
-              "data_type": "numeric"
-            }
-          ],
+            "output": [
+                {
+                    "data_path": "action_result.parameter.ip_address",
+                    "data_type": "string",
+                    "contains": [
+                        "ip",
+                        "ipv6"
+                    ]
+                },
+                {
+                    "data_path": "action_result.data.*.entity_name",
+                    "data_type": "string",
+                    "column_name": "entity name",
+                    "column_order": 0
+                },
+                {
+                    "data_path": "action_result.data.*.entity_type",
+                    "data_type": "string",
+                    "column_name": "entity type",
+                    "column_order": 1
+                },
+                {
+                    "data_path": "action_result.data.*.risk_rating",
+                    "data_type": "numeric",
+                    "column_name": "risk rating",
+                    "column_order": 2
+                },
+                {
+                    "data_path": "action_result.data.*.risk_score",
+                    "data_type": "numeric",
+                    "column_name": "risk score",
+                    "column_order": 3
+                },
+                {
+                    "data_path": "action_result.status",
+                    "data_type": "string",
+                    "column_name": "status",
+                    "column_order": 4
+                },
+                {
+                    "data_path": "action_result.message",
+                    "data_type": "string"
+                },
+                {
+                    "data_path": "summary.total_objects",
+                    "data_type": "numeric"
+                },
+                {
+                    "data_path": "summary.total_objects_successful",
+                    "data_type": "numeric"
+                }
+            ],
             "render": {
                 "type": "table"
             },
@@ -218,58 +218,57 @@
                     "order": 0
                 }
             },
-          "output": [
-            {
-              "data_path": "action_result.parameter.hostname",
-              "data_type": "string",
-              "contains": [
-                "host name"
-              ]
-            },
-            {
-              "data_path": "action_result.data.*.entity_name",
-              "data_type": "string",
-              "column_name": "entity name",
-              "column_order": 0
-            },
-            {
-              "data_path": "action_result.data.*.entity_type",
-              "data_type": "string",
-              "column_name": "entity type",
-              "column_order": 1
-            },
-
-            {
-              "data_path": "action_result.data.*.risk_rating",
-              "data_type": "numeric",
-              "column_name": "risk rating",
-              "column_order": 2
-            },
-            {
-              "data_path": "action_result.data.*.risk_score",
-              "data_type": "numeric",
-              "column_name": "risk score",
-              "column_order": 3
-            },
-            {
-              "data_path": "action_result.status",
-              "data_type": "string",
-              "column_name": "status",
-              "column_order": 4
-            },
-            {
-              "data_path": "action_result.message",
-              "data_type": "string"
-            },
-            {
-              "data_path": "summary.total_objects",
-              "data_type": "numeric"
-            },
-            {
-              "data_path": "summary.total_objects_successful",
-              "data_type": "numeric"
-            }
-          ],
+            "output": [
+                {
+                    "data_path": "action_result.parameter.hostname",
+                    "data_type": "string",
+                    "contains": [
+                        "host name"
+                    ]
+                },
+                {
+                    "data_path": "action_result.data.*.entity_name",
+                    "data_type": "string",
+                    "column_name": "entity name",
+                    "column_order": 0
+                },
+                {
+                    "data_path": "action_result.data.*.entity_type",
+                    "data_type": "string",
+                    "column_name": "entity type",
+                    "column_order": 1
+                },
+                {
+                    "data_path": "action_result.data.*.risk_rating",
+                    "data_type": "numeric",
+                    "column_name": "risk rating",
+                    "column_order": 2
+                },
+                {
+                    "data_path": "action_result.data.*.risk_score",
+                    "data_type": "numeric",
+                    "column_name": "risk score",
+                    "column_order": 3
+                },
+                {
+                    "data_path": "action_result.status",
+                    "data_type": "string",
+                    "column_name": "status",
+                    "column_order": 4
+                },
+                {
+                    "data_path": "action_result.message",
+                    "data_type": "string"
+                },
+                {
+                    "data_path": "summary.total_objects",
+                    "data_type": "numeric"
+                },
+                {
+                    "data_path": "summary.total_objects_successful",
+                    "data_type": "numeric"
+                }
+            ],
             "render": {
                 "type": "table"
             },
