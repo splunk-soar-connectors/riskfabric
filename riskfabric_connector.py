@@ -125,9 +125,8 @@ class RiskFabricConnector(BaseConnector):
         try:
             r = request_func(url, auth=(self._username, self._password), params=params)
         except Exception as e:
-            return RetVal(action_result.set_status( phantom.APP_ERROR,
-                          "Error Connecting to server. Url: {0}, Username: {1}, Password: {2}, Details: {3}".format(url,
-                          self._username, self._password, str(e))), resp_json)
+            return RetVal(action_result.set_status(phantom.APP_ERROR,
+                          "Error Connecting to server. Url: {0}, Details: {1}".format(url, str(e))), resp_json)
         return self._process_response(r, action_result)
 
     def _handle_test_connectivity(self, param):
@@ -146,7 +145,7 @@ class RiskFabricConnector(BaseConnector):
         if (phantom.is_fail(ret_val)):
             # the call to the 3rd party device or service failed, action result should contain all the error details
             # so just return from here
-            self.save_progress("Test Connectivity Failed. Error: {0}".format(action_result.get_message()))
+            self.save_progress("Test Connectivity Failed")
             return action_result.get_status()
 
         # Return success
