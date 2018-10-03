@@ -28,6 +28,7 @@ class RiskFabricConnector(BaseConnector):
         super(RiskFabricConnector, self).__init__()
 
         self._state = None
+        self._verify = None
         self._header = {"Content-Type": "application/json"}
         self._base_url = None
         self._username = None
@@ -123,7 +124,7 @@ class RiskFabricConnector(BaseConnector):
         url = self._base_url + endpoint
 
         try:
-            r = request_func(url, auth=(self._username, self._password), params=params)
+            r = request_func(url, auth=(self._username, self._password), params=params, verify=self._verify)
         except Exception as e:
             return RetVal(action_result.set_status(phantom.APP_ERROR,
                           "Error Connecting to server. Url: {0}, Details: {1}".format(url, str(e))), resp_json)
@@ -305,9 +306,10 @@ class RiskFabricConnector(BaseConnector):
 
         config = self.get_config()
 
-        self._base_url = config.get("baseurl")
-        self._username = config.get("username")
-        self._password = config.get("password")
+        self._verify = config["verify_server_cert"]
+        self._base_url = config["baseurl"]
+        self._username = config["username"]
+        self._password = config["password"]
 
         return phantom.APP_SUCCESS
 
